@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Ukrainian Seasons — quiz</title>
+  <style>body{background:#14100d;color:#f3e9dc;font-family:system-ui,sans-serif;padding:40px 20px;text-align:center}a{color:#e8a85b}</style>
+  <script>
+    // uk/ru → uk, інакше en. Відносний шлях працює і з basePath (GitHub Pages), і без нього.
+    (function () {
+      var l = (navigator.language || 'en').toLowerCase();
+      var lang = l.indexOf('uk') === 0 || l.indexOf('ru') === 0 ? 'uk' : 'en';
+      var base = location.pathname.replace(/index\.html$/, '').replace(/\/?$/, '/');
+      location.replace(base + lang + '/' + location.search);
+    })();
+  </script>
+</head>
+<body>
+  <p><a href="en/">English</a> · <a href="uk/">Українська</a></p>
+</body>
+</html>
